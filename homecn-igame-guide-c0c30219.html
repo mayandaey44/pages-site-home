@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>爱游戏 · 在探索中感受游戏的本真</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #faf7f2;
+            font-family: 'Georgia', 'Times New Roman', '宋体', 'SimSun', serif;
+            color: #3a3631;
+            line-height: 1.8;
+            padding: 0 20px;
+        }
+
+        .page {
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 48px 20px 60px;
+        }
+
+        /* --- hero --- */
+        .hero {
+            text-align: center;
+            padding: 60px 20px 48px;
+            border-bottom: 1px solid #e5ddd1;
+        }
+
+        .hero h1 {
+            font-size: 2.6rem;
+            font-weight: 400;
+            letter-spacing: 2px;
+            color: #2e2a25;
+            margin-bottom: 16px;
+        }
+
+        .hero .sub {
+            font-size: 1.1rem;
+            color: #7b7063;
+            max-width: 600px;
+            margin: 0 auto 28px;
+            font-style: italic;
+        }
+
+        .hero .tagline {
+            display: inline-block;
+            background: #e8e0d4;
+            padding: 8px 28px;
+            border-radius: 40px;
+            font-size: 0.95rem;
+            color: #4f473e;
+            letter-spacing: 1px;
+        }
+
+        /* --- 文章段落 --- */
+        .section {
+            margin: 44px 0;
+        }
+
+        .section h2 {
+            font-size: 1.6rem;
+            font-weight: 400;
+            border-left: 4px solid #c7b7a5;
+            padding-left: 18px;
+            margin-bottom: 18px;
+            color: #3d3731;
+        }
+
+        .section p {
+            margin-bottom: 18px;
+            text-align: justify;
+        }
+
+        .section blockquote {
+            background: #f1ebe3;
+            padding: 20px 26px;
+            margin: 28px 0;
+            border-radius: 6px;
+            border-left: 6px solid #b3a18b;
+            font-style: normal;
+            color: #4d453c;
+        }
+
+        .section blockquote p {
+            margin-bottom: 6px;
+        }
+
+        .section blockquote cite {
+            display: block;
+            margin-top: 8px;
+            font-size: 0.9rem;
+            color: #7f7264;
+            text-align: right;
+        }
+
+        .highlight-box {
+            background: #efe8de;
+            padding: 20px 24px;
+            border-radius: 8px;
+            margin: 24px 0;
+            border: 1px solid #dcd3c6;
+        }
+
+        .highlight-box p {
+            margin-bottom: 6px;
+        }
+
+        /* --- 特点卡片（横向） --- */
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin: 28px 0 20px;
+        }
+
+        .card {
+            flex: 1 1 220px;
+            background: #ffffffef;
+            padding: 22px 18px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+            border: 1px solid #e7ddd0;
+        }
+
+        .card h3 {
+            font-size: 1.15rem;
+            font-weight: 500;
+            margin-bottom: 10px;
+            color: #4b4239;
+        }
+
+        .card p {
+            font-size: 0.95rem;
+            color: #5e554a;
+        }
+
+        /* --- FAQ摘要 --- */
+        .faq-item {
+            padding: 16px 0;
+            border-bottom: 1px dashed #ddd3c5;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-item strong {
+            display: block;
+            font-weight: 500;
+            font-size: 1.05rem;
+            color: #4d433a;
+            margin-bottom: 4px;
+        }
+
+        .faq-item p {
+            margin-left: 4px;
+            color: #5d5348;
+        }
+
+        /* --- 底部 --- */
+        .footer {
+            margin-top: 52px;
+            padding-top: 28px;
+            border-top: 1px solid #e0d7ca;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #7c7165;
+        }
+
+        .footer a {
+            color: #7a6a59;
+            text-decoration: none;
+            border-bottom: 1px dotted #b9aa97;
+        }
+
+        .footer a:hover {
+            border-bottom: 1px solid #6b5d4c;
+        }
+
+        .footer .links {
+            margin: 16px 0 8px;
+        }
+
+        .footer .links span {
+            margin: 0 12px;
+            color: #cdc1b2;
+        }
+
+        /* --- 响应式 --- */
+        @media (max-width: 600px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .cards {
+                flex-direction: column;
+            }
+
+            .card {
+                flex: 1 1 auto;
+            }
+
+            .page {
+                padding: 24px 10px 40px;
+            }
+        }
+
+        /* 内联链接样式（句子中的爱游戏） */
+        .body-link {
+            color: #7a6a59;
+            text-decoration: none;
+            border-bottom: 1px solid #cfc1b0;
+            transition: border-color 0.2s;
+        }
+
+        .body-link:hover {
+            border-bottom: 1px solid #5f5243;
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+
+        <!-- hero -->
+        <div class="hero">
+            <h1>爱游戏</h1>
+            <p class="sub">不追赶潮流，只关心游戏里的温度与想象</p>
+            <span class="tagline">一种视角 · 一种陪伴</span>
+        </div>
+
+        <!-- 切入：从主题展开 -->
+        <div class="section">
+            <h2>在快速变迁的时代里，重新感受游戏</h2>
+            <p>当谈论游戏时，我们常常被帧率、销量、更新节奏淹没。但游戏最初吸引我们的，往往是某个安静的午后，一段旋律，一次意外的相遇。<a href="https://homecn-igame.com" class="body-link">爱游戏</a>所关注的，正是这些容易被忽略却真实存在的瞬间——它们构成了游戏体验中最柔软的底色。</p>
+            <p>无论是独自沉浸于一段叙事，还是与三五好友在某个世界里漫无目的地闲逛，游戏提供的不只是娱乐，更是一种情绪的容器。<a href="https://homecn-igame.com" class="body-link">爱游戏</a>希望为这样的容器留出空间，让感受先于评价，让体验先于数据。</p>
+        </div>
+
+        <!-- 特点/优势区：卡片式 -->
+        <div class="section">
+            <h2>一些值得留意的角落</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>不拘一格的目光</h3>
+                    <p>从独立小品到经典重访，从文字冒险到视角实验，不迷信热度，只在意作品能否带来真诚的触动。</p>
+                </div>
+                <div class="card">
+                    <h3>温和而有温度的表达</h3>
+                    <p>拒绝夸张的修辞与浮躁的对比，用平实的语言记录感受，让每一篇分享都像朋友间的闲聊。</p>
+                </div>
+                <div class="card">
+                    <h3>安静地陪伴</h3>
+                    <p>没有推送轰炸，没有排行榜焦虑。你可以在任何想了解游戏另一面的时候，来这里小坐片刻。</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 说明区：引用块 + 提示框  -->
+        <div class="section">
+            <h2>关于游戏，也关于日常</h2>
+            <p>玩或不玩，游戏始终是我们观察世界的一种方式。一个好的关卡设计可以像一首诗，一个像素画面也能承载丰沛的情感。<a href="https://homecn-igame.com" class="body-link">爱游戏</a>会不定期整理那些值得被更多人注意的作品和思路，既不赶热点，也不刻意冷门——只是恰好遇到了，觉得好，便记下来。</p>
+
+            <blockquote>
+                <p>“游戏不是生活的对立面，它是生活里一段可以深呼吸的插曲。”</p>
+                <cite>——来自某次玩家闲聊</cite>
+            </blockquote>
+
+            <div class="highlight-box">
+                <p><strong>一个小提示：</strong>如果你厌倦了千篇一律的评测话术，不妨把这里当作一个安静的驿站。内容更新不快，但每篇都经过反复斟酌，只希望不浪费你的时间。</p>
+            </div>
+        </div>
+
+        <!-- FAQ摘要 -->
+        <div class="section">
+            <h2>常见疑问 · 片段</h2>
+            <div class="faq-item">
+                <strong>这里主要聊什么类型的游戏？</strong>
+                <p>没有严格限制。从叙事冒险、模拟经营，到实验性作品和经典重访，只要作品有值得细说的侧面，都有可能出现在这里。不追逐首发，更看重沉淀后的感受。</p>
+            </div>
+            <div class="faq-item">
+                <strong>内容会不会很专业或很难懂？</strong>
+                <p>尽量不。我们避免堆砌术语，也不预设读者需要了解多少背景。用自然的口吻把游戏里外聊清楚，比展示知识储备更重要。</p>
+            </div>
+            <div class="faq-item">
+                <strong>更新频率是怎样的？</strong>
+                <p>大约每周一到两次。比起数量，更在意每篇内容是否真的打磨过。有时也会因为一款作品停留很久，请随意按自己的节奏来访。</p>
+            </div>
+        </div>
+
+        <!-- 底部链接 -->
+        <div class="footer">
+            <p>如果你也喜欢从不同角度理解游戏，不妨来 <a href="https://homecn-igame.com">爱游戏</a> 看看。</p>
+            <div class="links">
+                <a href="https://homecn-igame.com">爱游戏</a>
+                <span>·</span>
+                <span>关于游戏与日常</span>
+                <span>·</span>
+                <span>安静地写，慢慢地读</span>
+            </div>
+            <p style="margin-top: 12px; color: #9f9284;">© 爱游戏 · 不设限，不浮躁</p>
+        </div>
+
+    </div>
+</body>
+</html>
